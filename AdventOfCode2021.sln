@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day01-SonarSweep", "Day01-S
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day02-Dive", "Day02-Dive\Day02-Dive.vcxproj", "{CD5AFD3D-BBA2-47D4-AB40-1BE3C8B6F5E6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day03-BinaryDiagnostic", "Day3-BinaryDiagnostic\Day3-BinaryDiagnostic.vcxproj", "{837F0A67-783D-4158-91A6-D84C75A7A21E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{CD5AFD3D-BBA2-47D4-AB40-1BE3C8B6F5E6}.Release|x64.Build.0 = Release|x64
 		{CD5AFD3D-BBA2-47D4-AB40-1BE3C8B6F5E6}.Release|x86.ActiveCfg = Release|Win32
 		{CD5AFD3D-BBA2-47D4-AB40-1BE3C8B6F5E6}.Release|x86.Build.0 = Release|Win32
+		{837F0A67-783D-4158-91A6-D84C75A7A21E}.Debug|x64.ActiveCfg = Debug|x64
+		{837F0A67-783D-4158-91A6-D84C75A7A21E}.Debug|x64.Build.0 = Debug|x64
+		{837F0A67-783D-4158-91A6-D84C75A7A21E}.Debug|x86.ActiveCfg = Debug|Win32
+		{837F0A67-783D-4158-91A6-D84C75A7A21E}.Debug|x86.Build.0 = Debug|Win32
+		{837F0A67-783D-4158-91A6-D84C75A7A21E}.Release|x64.ActiveCfg = Release|x64
+		{837F0A67-783D-4158-91A6-D84C75A7A21E}.Release|x64.Build.0 = Release|x64
+		{837F0A67-783D-4158-91A6-D84C75A7A21E}.Release|x86.ActiveCfg = Release|Win32
+		{837F0A67-783D-4158-91A6-D84C75A7A21E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
