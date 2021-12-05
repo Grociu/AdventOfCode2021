@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day03-BinaryDiagnostic", "D
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day04-GiantSquid", "Day04-GiantSquid\Day04-GiantSquid.vcxproj", "{DA785AC4-AE9D-4E29-9DEC-9130B620933F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day05-Hydrothermal-Venture", "Day05-Hydrothermal-Venture\Day05-Hydrothermal-Venture.vcxproj", "{B3B97C8C-5B2D-44EB-A275-8F63B2ED31C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{DA785AC4-AE9D-4E29-9DEC-9130B620933F}.Release|x64.Build.0 = Release|x64
 		{DA785AC4-AE9D-4E29-9DEC-9130B620933F}.Release|x86.ActiveCfg = Release|Win32
 		{DA785AC4-AE9D-4E29-9DEC-9130B620933F}.Release|x86.Build.0 = Release|Win32
+		{B3B97C8C-5B2D-44EB-A275-8F63B2ED31C5}.Debug|x64.ActiveCfg = Debug|x64
+		{B3B97C8C-5B2D-44EB-A275-8F63B2ED31C5}.Debug|x64.Build.0 = Debug|x64
+		{B3B97C8C-5B2D-44EB-A275-8F63B2ED31C5}.Debug|x86.ActiveCfg = Debug|Win32
+		{B3B97C8C-5B2D-44EB-A275-8F63B2ED31C5}.Debug|x86.Build.0 = Debug|Win32
+		{B3B97C8C-5B2D-44EB-A275-8F63B2ED31C5}.Release|x64.ActiveCfg = Release|x64
+		{B3B97C8C-5B2D-44EB-A275-8F63B2ED31C5}.Release|x64.Build.0 = Release|x64
+		{B3B97C8C-5B2D-44EB-A275-8F63B2ED31C5}.Release|x86.ActiveCfg = Release|Win32
+		{B3B97C8C-5B2D-44EB-A275-8F63B2ED31C5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
