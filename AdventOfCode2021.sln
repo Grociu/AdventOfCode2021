@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day09-SmokeBasin", "Day09-S
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day10-SyntaxSorting", "Day10-SyntaxSorting\Day10-SyntaxSorting.vcxproj", "{2B07A9B6-FE49-4256-9CFE-29511D5C51D2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day11-DumboOctopus", "Day11-DumboOctopus\Day11-DumboOctopus.vcxproj", "{55A698FD-C9D8-42DC-8B13-C67ED29C71F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{2B07A9B6-FE49-4256-9CFE-29511D5C51D2}.Release|x64.Build.0 = Release|x64
 		{2B07A9B6-FE49-4256-9CFE-29511D5C51D2}.Release|x86.ActiveCfg = Release|Win32
 		{2B07A9B6-FE49-4256-9CFE-29511D5C51D2}.Release|x86.Build.0 = Release|Win32
+		{55A698FD-C9D8-42DC-8B13-C67ED29C71F7}.Debug|x64.ActiveCfg = Debug|x64
+		{55A698FD-C9D8-42DC-8B13-C67ED29C71F7}.Debug|x64.Build.0 = Debug|x64
+		{55A698FD-C9D8-42DC-8B13-C67ED29C71F7}.Debug|x86.ActiveCfg = Debug|Win32
+		{55A698FD-C9D8-42DC-8B13-C67ED29C71F7}.Debug|x86.Build.0 = Debug|Win32
+		{55A698FD-C9D8-42DC-8B13-C67ED29C71F7}.Release|x64.ActiveCfg = Release|x64
+		{55A698FD-C9D8-42DC-8B13-C67ED29C71F7}.Release|x64.Build.0 = Release|x64
+		{55A698FD-C9D8-42DC-8B13-C67ED29C71F7}.Release|x86.ActiveCfg = Release|Win32
+		{55A698FD-C9D8-42DC-8B13-C67ED29C71F7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
