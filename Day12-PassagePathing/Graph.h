@@ -1,6 +1,6 @@
 #include <vector>
 #include <string>
-
+#include <map>
 
 // struct Edge
 template <typename T>
@@ -25,10 +25,11 @@ class Graph{
 public:
 	Graph(const std::vector<Edge<T>>& edges);
 	std::vector<T> get_adjecent(const T& vertex);
-	int num_vertexes() { return adjecency_list.size(); }
+	int num_vertexes() const { return adjecency_list.size(); }
 private:
-	int get_adj_lst_index(const T src);
+	int get_adj_lst_index(const T& src);
 	std::vector<std::vector<T>> adjecency_list;
+	std::map<T, int> indexes;
 };
 
 // universal template member functions must be defined in the header file
@@ -46,7 +47,8 @@ Graph<T>::Graph(const std::vector<Edge<T>>& edges) {
 template <typename T>
 std::vector<T> Graph<T>::get_adjecent(const T& vertex) {
 	std::vector<T> adjacent = adjecency_list[get_adj_lst_index(vertex)];
-	adjacent.erase(adjacent.begin()); // erase the current vertex, that is the identifier of the adjecency list, leaving only adjacent vertexes
+	// erase the current vertex, that is the identifier of the adjecency list, leaving only adjacent vertexes
+	adjacent.erase(adjacent.begin());
 	//DEBUG
 	/*
 	std::cout << "Adjacent to (" << vertex << "): ";
@@ -57,15 +59,23 @@ std::vector<T> Graph<T>::get_adjecent(const T& vertex) {
 }
 
 template <typename T>
-int Graph<T>::get_adj_lst_index(const T src) {
+int Graph<T>::get_adj_lst_index(const T& src) {
 	// find existing
+	/*
 	for (int i = 0; i < adjecency_list.size(); i++) {
 		if (adjecency_list[i][0] == src) return i;
 	}
-	// not found
-	std::vector<T> a;
-	a.push_back(src);
-	adjecency_list.push_back(a);
-	int n = adjecency_list.size() - 1;
-	return n;
+	*/
+	try {
+		return indexes.at(src);
+	}
+	catch (std::out_of_range) {
+		// not found
+		std::vector<T> a;
+		a.push_back(src);
+		adjecency_list.push_back(a);
+		int n = adjecency_list.size() - 1;
+		indexes[src] = n;
+		return n;
+	}
 }

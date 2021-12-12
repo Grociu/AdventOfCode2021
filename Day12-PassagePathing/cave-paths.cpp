@@ -2,6 +2,7 @@
 #include <fstream>
 #include <sstream>
 #include "Graph.h"
+#include "Path.h"
 
 
 
@@ -27,16 +28,6 @@ void read_edges_from_input(std::ifstream& ifs, std::vector<Edge<std::string>>& d
 		iss >> e;
 		data.push_back(e);
 	}
-}
-
-// CAVE CLASSIFICATION
-enum Cave_type {
-	large, small
-};
-
-Cave_type ctype(std::string cv) {
-	if (isupper(cv[0])) return large;
-	else return small;
 }
 
 // PATHFINDING

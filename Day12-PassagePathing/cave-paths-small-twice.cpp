@@ -2,7 +2,10 @@
 #include <fstream>
 #include <sstream>
 #include "Graph.h"
+#include "Path.h"
+#include <stack>
 
+#include <chrono>
 
 
 // INPUT PARSING
@@ -29,59 +32,19 @@ void read_edges_from_input(std::ifstream& ifs, std::vector<Edge<std::string>>& d
 	}
 }
 
-// CAVE CLASSIFICATION
-enum Cave_type {
-	large, small
-};
-
-Cave_type ctype(std::string cv) {
-	if (isupper(cv[0])) return large;
-	else return small;
-}
-
-// PATHFINDING
-struct Path {
-	// constructors
-	Path(const std::string start) { route.push_back(start); }
-	Path(const Path& p, const std::string new_way) : small_visited_twice{ p.small_visited_twice } { route = p.route; route.push_back(new_way); count_small(new_way); };
-	// was the node already visited on this path?
-	bool already_visited(std::string node) { return std::find(route.begin(), route.end(), node) != route.end(); }
-	bool can_visit(std::string node) {
-		// cant visit the start of route
-		if (node == route[0]) return false; // can't go back to beginning
-		if (ctype(node) == large || !already_visited(node)) return true;
-		return !small_visited_twice;
-	}
-	
-	// DEBUG
-	void print() {
-		std::cout << "Path Route: ";
-		for (auto& s : route) std::cout << s << " > ";
-		std::cout << std::endl;
-	}
-	// data members
-	std::vector<std::string> route;
-private:
-	void count_small(std::string node) {
-		if (small_visited_twice || ctype(node) == large) return; // already fullfilled no need to adjust
-		small_visited_twice = std::count(route.begin(), route.end(), node) >= 2;
-	}
-	bool small_visited_twice{ false };
-};
-
-int find_num_paths(const std::string start, const std::string end, Graph<std::string>& data) {
+int find_num_paths(const std::string& start, const std::string& end, Graph<std::string>& data) {
 	// this only keeps track of the number if finished paths
-	std::vector<Path> open_paths;
+	std::stack<Path> open_paths;
 	int num_routes{ 0 };
-	open_paths.push_back(Path{ start });
+	open_paths.push(Path{ start });
 
 	while (open_paths.size() > 0) {
 		// work on last path
-		Path p = open_paths.back();
+		const Path p = open_paths.top();
 		//p.print();
-		open_paths.pop_back();
+		open_paths.pop();
 		// get adjacent caves
-		for (auto node : data.get_adjecent(p.route.back())) {
+		for (const std::string& node : data.get_adjecent(p.current())) {
 
 			// if it's the endpoint, move to it and save
 			if (node == end) {
@@ -92,7 +55,7 @@ int find_num_paths(const std::string start, const std::string end, Graph<std::st
 			// illegal path if small and already visited - discard
 			if (!p.can_visit(node)) continue;
 			// else, move in
-			open_paths.push_back(Path{ p, node });
+			open_paths.push(Path{ p, node });
 		}
 	}
 	return num_routes;
@@ -102,6 +65,8 @@ int find_num_paths(const std::string start, const std::string end, Graph<std::st
 // EXECUTION
 
 int main() {
+	// measure execution time
+	const auto start = std::chrono::high_resolution_clock::now();
 	// read input
 	const std::string input_filename = "Input.txt";
 	//const std::string input_filename = "TestInput3.txt";
@@ -115,9 +80,28 @@ int main() {
 	// find all the paths throught the cave system
 	const std::string start_cave = "start";
 	const std::string end_cave = "end";
-	int num_paths = find_num_paths(start_cave, end_cave, cave_system);
-
+	const int num_paths = find_num_paths(start_cave, end_cave, cave_system);
+	const auto end = std::chrono::high_resolution_clock::now();
+	const auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
 	// output to console
-	std::cout << "There are " << num_paths << " paths through the cave system.";
-
+	std::cout << "There are " << num_paths << " paths through the cave system." << std::endl;
+	std::cout << "Execution took " << duration.count() << "mus.";
 }
+
+// attempts to optimize
+/*
+Baseline:
+54883252 mus - 54.88s
+Switch open_paths to stack:
+54128783 mus. - 54.13s , no improvement
+Move Path declaration and definition outside the main file:
+58389897mus - 58.39s, cleaner cone, but longer execution
+Add qualifiers to member functions that limit memory use:
+48758194mus - 48.76s, progress - this limited the creation of copied strings for some functions
+Add further qualifiers and const to external class definitions and initializations
+46445795mus - 46.45s minimal progress
+Final qualifiers
+45169402mus - 45.17s
+Refactor get_afj_lst_index to use a map
+44846316mus - 44.85s - wasteful
+*/
