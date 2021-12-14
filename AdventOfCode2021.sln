@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day12-PassagePathing", "Day
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day13-TransparrentOrigami", "Day13-TransparrentOrigami\Day13-TransparrentOrigami.vcxproj", "{66F2CA27-3906-4613-A814-293556A7DC31}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day14-ExtendedPolymerization", "Day14-ExtendedPolymerization\Day14-ExtendedPolymerization.vcxproj", "{46767369-2F5D-4AA0-9D70-C066DE9A7EBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{66F2CA27-3906-4613-A814-293556A7DC31}.Release|x64.Build.0 = Release|x64
 		{66F2CA27-3906-4613-A814-293556A7DC31}.Release|x86.ActiveCfg = Release|Win32
 		{66F2CA27-3906-4613-A814-293556A7DC31}.Release|x86.Build.0 = Release|Win32
+		{46767369-2F5D-4AA0-9D70-C066DE9A7EBF}.Debug|x64.ActiveCfg = Debug|x64
+		{46767369-2F5D-4AA0-9D70-C066DE9A7EBF}.Debug|x64.Build.0 = Debug|x64
+		{46767369-2F5D-4AA0-9D70-C066DE9A7EBF}.Debug|x86.ActiveCfg = Debug|Win32
+		{46767369-2F5D-4AA0-9D70-C066DE9A7EBF}.Debug|x86.Build.0 = Debug|Win32
+		{46767369-2F5D-4AA0-9D70-C066DE9A7EBF}.Release|x64.ActiveCfg = Release|x64
+		{46767369-2F5D-4AA0-9D70-C066DE9A7EBF}.Release|x64.Build.0 = Release|x64
+		{46767369-2F5D-4AA0-9D70-C066DE9A7EBF}.Release|x86.ActiveCfg = Release|Win32
+		{46767369-2F5D-4AA0-9D70-C066DE9A7EBF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
