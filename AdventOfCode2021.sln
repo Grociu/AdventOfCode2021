@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day17-TrickShot", "Day17-Tr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day18-Snailfish", "Day18-Snailfish\Day18-Snailfish.vcxproj", "{B7185BF3-C8B1-4B5A-AE2C-698A9B4DF173}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day18.1-Unittest", "Day18.1-Unittest\Day18.1-Unittest.vcxproj", "{9DB7DCFC-630C-46B4-9D33-7867556086EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -201,6 +203,14 @@ Global
 		{B7185BF3-C8B1-4B5A-AE2C-698A9B4DF173}.Release|x64.Build.0 = Release|x64
 		{B7185BF3-C8B1-4B5A-AE2C-698A9B4DF173}.Release|x86.ActiveCfg = Release|Win32
 		{B7185BF3-C8B1-4B5A-AE2C-698A9B4DF173}.Release|x86.Build.0 = Release|Win32
+		{9DB7DCFC-630C-46B4-9D33-7867556086EE}.Debug|x64.ActiveCfg = Debug|x64
+		{9DB7DCFC-630C-46B4-9D33-7867556086EE}.Debug|x64.Build.0 = Debug|x64
+		{9DB7DCFC-630C-46B4-9D33-7867556086EE}.Debug|x86.ActiveCfg = Debug|Win32
+		{9DB7DCFC-630C-46B4-9D33-7867556086EE}.Debug|x86.Build.0 = Debug|Win32
+		{9DB7DCFC-630C-46B4-9D33-7867556086EE}.Release|x64.ActiveCfg = Release|x64
+		{9DB7DCFC-630C-46B4-9D33-7867556086EE}.Release|x64.Build.0 = Release|x64
+		{9DB7DCFC-630C-46B4-9D33-7867556086EE}.Release|x86.ActiveCfg = Release|Win32
+		{9DB7DCFC-630C-46B4-9D33-7867556086EE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
