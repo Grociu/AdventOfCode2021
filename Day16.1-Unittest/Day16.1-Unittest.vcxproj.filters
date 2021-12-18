@@ -15,32 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Instructions-Part1.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="TestInput2.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="TestInput3.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="TestInput1.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="TestInput11.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="sum-of-id.cpp">
+    <ClCompile Include="Day16.1-Unittest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Packet.cpp">
+    <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Packet.h">
+    <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

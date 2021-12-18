@@ -35,6 +35,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day15-Chiton", "Day15-Chito
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day16-PacketDecoder", "Day16-PacketDecoder\Day16-PacketDecoder.vcxproj", "{1016F9E1-B587-4414-BC6E-DEF546C9695A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day16.1-Unittest", "Day16.1-Unittest\Day16.1-Unittest.vcxproj", "{632F9137-693B-4540-80C2-FFB34001EE8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -171,6 +173,14 @@ Global
 		{1016F9E1-B587-4414-BC6E-DEF546C9695A}.Release|x64.Build.0 = Release|x64
 		{1016F9E1-B587-4414-BC6E-DEF546C9695A}.Release|x86.ActiveCfg = Release|Win32
 		{1016F9E1-B587-4414-BC6E-DEF546C9695A}.Release|x86.Build.0 = Release|Win32
+		{632F9137-693B-4540-80C2-FFB34001EE8C}.Debug|x64.ActiveCfg = Debug|x64
+		{632F9137-693B-4540-80C2-FFB34001EE8C}.Debug|x64.Build.0 = Debug|x64
+		{632F9137-693B-4540-80C2-FFB34001EE8C}.Debug|x86.ActiveCfg = Debug|Win32
+		{632F9137-693B-4540-80C2-FFB34001EE8C}.Debug|x86.Build.0 = Debug|Win32
+		{632F9137-693B-4540-80C2-FFB34001EE8C}.Release|x64.ActiveCfg = Release|x64
+		{632F9137-693B-4540-80C2-FFB34001EE8C}.Release|x64.Build.0 = Release|x64
+		{632F9137-693B-4540-80C2-FFB34001EE8C}.Release|x86.ActiveCfg = Release|Win32
+		{632F9137-693B-4540-80C2-FFB34001EE8C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
