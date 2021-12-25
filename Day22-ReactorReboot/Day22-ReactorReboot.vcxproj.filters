@@ -14,4 +14,40 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Instructions-Part1.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="TestInput1.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="TestInput2.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="PuzzleInput.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="TestInput3.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cuboid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cuboid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="full-sequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
