@@ -51,6 +51,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day21-DiracDice", "Day21-Di
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day22-ReactorReboot", "Day22-ReactorReboot\Day22-ReactorReboot.vcxproj", "{840AA18C-E41C-4296-9CC3-9F4B7D0ED59C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day23-Amphipod", "Day23-Amphipod\Day23-Amphipod.vcxproj", "{78D5518A-F915-4B29-86AF-C24D6C58DDF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -251,6 +253,14 @@ Global
 		{840AA18C-E41C-4296-9CC3-9F4B7D0ED59C}.Release|x64.Build.0 = Release|x64
 		{840AA18C-E41C-4296-9CC3-9F4B7D0ED59C}.Release|x86.ActiveCfg = Release|Win32
 		{840AA18C-E41C-4296-9CC3-9F4B7D0ED59C}.Release|x86.Build.0 = Release|Win32
+		{78D5518A-F915-4B29-86AF-C24D6C58DDF5}.Debug|x64.ActiveCfg = Debug|x64
+		{78D5518A-F915-4B29-86AF-C24D6C58DDF5}.Debug|x64.Build.0 = Debug|x64
+		{78D5518A-F915-4B29-86AF-C24D6C58DDF5}.Debug|x86.ActiveCfg = Debug|Win32
+		{78D5518A-F915-4B29-86AF-C24D6C58DDF5}.Debug|x86.Build.0 = Debug|Win32
+		{78D5518A-F915-4B29-86AF-C24D6C58DDF5}.Release|x64.ActiveCfg = Release|x64
+		{78D5518A-F915-4B29-86AF-C24D6C58DDF5}.Release|x64.Build.0 = Release|x64
+		{78D5518A-F915-4B29-86AF-C24D6C58DDF5}.Release|x86.ActiveCfg = Release|Win32
+		{78D5518A-F915-4B29-86AF-C24D6C58DDF5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
